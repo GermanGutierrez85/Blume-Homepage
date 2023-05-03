@@ -1,0 +1,133 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;;
+ }
+ :root{
+    --verde: #717744;
+    --humo: #eff1ed;
+    --marron: #bbb193;
+ }
+ body{
+    max-width: 480px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+ }
+
+/*Estilos de Barra de Navegacion*/
+
+ .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, var(--humo), #fcfffa) ;
+    padding: 0 15px;
+    height: 50px;
+ }
+ .flor-blume{
+    width: 40px;
+ }
+ .pestañas{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.7em;
+ }
+ .pestañas > li > a{
+    color: var(--marron);
+    font-weight: 500;
+ }
+ .pestañas > li > a:hover{
+    color: var(--verde);
+    font-size: 1em;
+    font-weight: bold;
+    transition: all ease-in 0.3s;
+ }
+ .material-icons{
+    color: var(--marron);
+ }
+.material-icons:hover{
+    color: var(--verde);
+}
+
+/*Seccion central*/
+section{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 3fr);
+}
+.deco{
+    grid-row: 1 / 6;
+    grid-column: 1 / 5;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jarrones-tonos-tierra-1604668041.jpg?crop=0.563xw:1.00xh;0.311xw,0&resize=640:*);
+    background-size: cover;
+}
+.textil{
+    grid-row: 2 / 7;
+    grid-column: 5 / 7;
+    background-image: url(https://iglutiendas.com/img/cms/TEXTIL%20HOGAR.jpg);
+    background-size: cover;
+}
+.arqui{
+    grid-row: 8 / 13;
+    grid-column: 4 / 7;
+    background-image: url(https://media.istockphoto.com/id/700603482/es/vector/ilustraci%C3%B3n-vectorial-de-dibujo-arquitect%C3%B3nico-lineal-proyecto-unifamiliar.jpg?s=612x612&w=0&k=20&c=0XJ2c62ZVEr-RHVrzAIc1tHjJnBI2CdSgpwG75Mjh1w=);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.interiores{
+    grid-row: 6 / 12;
+    grid-column: 1 / 4;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJppDTtyBDgKPdbI1DiWZSBAC4Rkz-uj2EaCig9KqcgMCXzSvDaKWBaJ6w8XyI6Jy_bUQ&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.blume{
+    grid-row: 6 / 6;
+    grid-column: 4 / 4;
+    
+}
+/*Estilos del Footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    background-color: #a37145;
+    font-size: 8px;
+    height: 80px;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    color: var(--humo);
+    gap: 5px;
+}
+.locacion, .phone{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+    margin: 2px 0px;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.redes > li > a >img{
+    width: 15px;
+}
