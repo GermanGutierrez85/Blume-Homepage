@@ -18,6 +18,10 @@
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    /* background: linear-gradient(rgba(239, 241, 237, 0.5), rgba(239, 241, 237, 0.5)),
+    url(../imagenes/asdsd_Mesa\ de\ trabajo\ 1.png);
+    background-size: 8em;
+    background-repeat: repeat-x repeat-y; */
  }
 
 /*Estilos de Barra de Navegacion*/
@@ -59,7 +63,7 @@
 }
 
 /*Seccion central*/
-section{
+.section-landing{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(12, 3fr);
@@ -81,7 +85,7 @@ h3 > a{
 .deco{
     grid-row: 1 / 7;
     grid-column: 1 / 4;
-    background: linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)),
+    background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
      url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jarrones-tonos-tierra-1604668041.jpg?crop=0.563xw:1.00xh;0.311xw,0&resize=640:*);
     background-size: cover;
     border-bottom-right-radius: 8px;
@@ -89,7 +93,7 @@ h3 > a{
 .textil{
     grid-row: 1 / 7;
     grid-column: 4 / 7;
-    background: linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)),
+    background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
     url(https://iglutiendas.com/img/cms/TEXTIL%20HOGAR.jpg);
     background-size: cover;
     border-bottom-left-radius: 8px;
@@ -97,7 +101,7 @@ h3 > a{
 .arqui{
     grid-row: 7 / 13;
     grid-column: 4 / 7;
-    background: linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)),
+    background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
     url(https://i.pinimg.com/550x/8e/5f/df/8e5fdf1c38aa709c6327260cb4335244.jpg);
     background-size: cover;
     background-position-x: center;
@@ -107,7 +111,7 @@ h3 > a{
 .interiores{
     grid-row: 7 / 13;
     grid-column: 1 / 4;
-    background: linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)),
+    background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
     url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0OzUs1GDAe7rz7BBX-kvRRVqNA3AM_bdy9w&usqp=CAU);
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,4 +150,29 @@ footer{
 }
 .redes > li > a >img{
     width: 15px;
+}
+
+/*Estilos de la pestaña "NOSOTROS"*/
+.sectionNos{
+    background: linear-gradient(rgba(239, 241, 237, 0.5), rgba(239, 241, 237, 0.5)),
+    url(../imagenes/asdsd_Mesa\ de\ trabajo\ 1.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.img-nos{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 170px;
+}
+.nosotros{
+    position: relative;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 50px;
+    width: 300px;
+    color: var(--verde);
+    background: linear-gradient(rgba(239, 241, 237, 0.8), rgba(239, 241, 237, 0.8));
+    border-radius: 10px;
 }
