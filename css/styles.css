@@ -104,8 +104,8 @@ h3 > a{
     background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
     url(https://i.pinimg.com/550x/8e/5f/df/8e5fdf1c38aa709c6327260cb4335244.jpg);
     background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
+    /* background-position-x: center;
+    background-position-y: center; */
     border-top-left-radius: 8px;
 }
 .interiores{
@@ -152,27 +152,33 @@ footer{
     width: 15px;
 }
 
-/*Estilos de la pestaña "NOSOTROS"*/
-.sectionNos{
+/*Estilos de las pestañas "NOSOTROS" "ARQUI" "INTERIORES" "CONTACTO"*/
+.fondoBlume{
     background: linear-gradient(rgba(239, 241, 237, 0.5), rgba(239, 241, 237, 0.5)),
     url(../imagenes/asdsd_Mesa\ de\ trabajo\ 1.png);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+    background-size: 85px;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+    
 }
-.img-nos{
-    position: relative;
-    margin-top: 100px;
-    margin-left: 170px;
-}
-.nosotros{
-    position: relative;
+.textoCategoria{
     text-align: center;
-    margin-top: 250px;
-    margin-left: 50px;
-    width: 300px;
+    width: 23em;
+    height: max-content;
     color: var(--verde);
     background: linear-gradient(rgba(239, 241, 237, 0.8), rgba(239, 241, 237, 0.8));
+    border-radius: 10px;
+}
+.imgenCategoria > img{
+    width: 23em;
+    border-radius: 10px;
+}
+.imgenInteriores > img{
+    width: 15em;
     border-radius: 10px;
 }
