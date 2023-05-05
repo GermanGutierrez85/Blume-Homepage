@@ -171,14 +171,133 @@ footer{
     width: 23em;
     height: max-content;
     color: var(--verde);
-    background: linear-gradient(rgba(239, 241, 237, 0.8), rgba(239, 241, 237, 0.8));
+    background: linear-gradient(rgba(239, 241, 237, 0.5), rgba(239, 241, 237, 0.5));
     border-radius: 10px;
+    box-shadow: 1px 3px 6px var(--verde);
+    padding: 5px;
 }
 .imgenCategoria > img{
     width: 23em;
     border-radius: 10px;
+    box-shadow: 1px 3px 6px var(--verde);
 }
-.imgenInteriores > img{
-    width: 15em;
+.imagenInteriores > img{
+    width: 25em;
     border-radius: 10px;
+    box-shadow: 1px 3px 6px var(--verde);
+}
+
+/*Estilos para las paginas "ARTICULOS" "TEXTIL" "DECO" y "CARRITO"*/
+header{
+    width: 100%;
+    text-align: center;
+    background-color: var(--humo);
+    color: var(--verde);
+    height: fit-content;
+}
+.seccionCatalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 5px;
+}
+.catalogo > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 3px var(--humo);
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 13em;
+    color: var(--verde);
+    gap: 3px;
+}
+.cards li img{
+    width: 100%;
+}
+.cards li p{
+    font-size: 13px;
+    opacity: 0.6;
+}
+.agregar{
+    background-color: var(--verde);
+    color: var(--humo);
+    width: 90%;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px 1px;
+    text-align: center;
+    cursor: pointer;
+}
+.agregar:hover{
+    background-color: #b67e4c;
+    color: white;
+}
+
+/*Estilos del "CARRITO"*/
+
+.articulosCarrito{
+    width: 100%;
+}
+.carrito > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    box-shadow: 0px 2px 3px var(--humo);
+    margin: 0px 10px;
+}
+.cardsCarrito{
+    display: flex;
+    align-items: center;
+    width: 13em;
+    color: var(--verde);
+    gap: 10px;
+}
+.cardsCarrito li img{
+    width: 5em;
+}
+.cardsCarrito li p{
+    width: max-content;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.eliminar{
+    background-color: var(--verde);
+    color: var(--humo);
+    width: max-content;
+    padding: 1px 5px;
+    border-radius: 15px;
+    margin: 10px 1px;
+    cursor: pointer;
+}
+.eliminar:hover{
+    background-color: #b67e4c;
+    color: white;
+}
+.comprar{
+    background-color: var(--verde);
+    color: var(--humo);
+    width: 50%;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.comprar p{
+    font-size: 12px;
+}
+.comprar:hover{
+    background-color: #b67e4c;
+    color: white;
 }
