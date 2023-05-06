@@ -14,14 +14,10 @@
     --marron: #bbb193;
  }
  body{
-    max-width: 480px;
+    /* max-width: 480px; */
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    /* background: linear-gradient(rgba(239, 241, 237, 0.5), rgba(239, 241, 237, 0.5)),
-    url(../imagenes/asdsd_Mesa\ de\ trabajo\ 1.png);
-    background-size: 8em;
-    background-repeat: repeat-x repeat-y; */
  }
 
 /*Estilos de Barra de Navegacion*/
@@ -61,6 +57,9 @@
 .material-icons:hover{
     color: var(--verde);
 }
+.iconCarrito{
+    width: max-content;
+}
 
 /*Seccion central*/
 .section-landing{
@@ -88,6 +87,7 @@ h3 > a{
     background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
      url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jarrones-tonos-tierra-1604668041.jpg?crop=0.563xw:1.00xh;0.311xw,0&resize=640:*);
     background-size: cover;
+    background-position: center;
     border-bottom-right-radius: 8px;
 }
 .textil{
@@ -96,6 +96,7 @@ h3 > a{
     background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
     url(https://iglutiendas.com/img/cms/TEXTIL%20HOGAR.jpg);
     background-size: cover;
+    background-position: center;
     border-bottom-left-radius: 8px;
 }
 .arqui{
@@ -104,17 +105,16 @@ h3 > a{
     background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
     url(https://i.pinimg.com/550x/8e/5f/df/8e5fdf1c38aa709c6327260cb4335244.jpg);
     background-size: cover;
-    /* background-position-x: center;
-    background-position-y: center; */
+    background-position: center;
     border-top-left-radius: 8px;
 }
 .interiores{
     grid-row: 7 / 13;
     grid-column: 1 / 4;
     background: /* linear-gradient(rgba(239, 241, 237, 0.3), rgba(239, 241, 237, 0.3)), */
-    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0OzUs1GDAe7rz7BBX-kvRRVqNA3AM_bdy9w&usqp=CAU);
+    url(https://imanquehue.com/content/uploads/sala-de-estar.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     border-top-right-radius: 8px;
 }
 
@@ -198,8 +198,9 @@ header{
 .seccionCatalogo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .catalogo{
     display: flex;
@@ -247,19 +248,39 @@ header{
 /*Estilos del "CARRITO"*/
 
 .articulosCarrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+header{
     width: 100%;
+}
+.carrito{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 10px;
+    gap: 15px;
 }
 .carrito > div{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    box-shadow: 0px 2px 3px var(--humo);
+    box-shadow: 0px 2px 3px #bbb193;
     margin: 0px 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    background-color: #f4f5f2;
+   
 }
 .cardsCarrito{
     display: flex;
     align-items: center;
-    width: 13em;
+    justify-content: start;
+    width: 70%;
     color: var(--verde);
     gap: 10px;
 }
@@ -267,9 +288,9 @@ header{
     width: 5em;
 }
 .cardsCarrito li p{
-    width: max-content;
     font-size: 12px;
     opacity: 0.6;
+    padding: 3px;
 }
 .eliminar{
     background-color: var(--verde);
@@ -287,12 +308,14 @@ header{
 .comprar{
     background-color: var(--verde);
     color: var(--humo);
-    width: 50%;
+    width: 200px;
     padding: 5px;
     border-radius: 15px;
-    margin: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
     text-align: center;
     cursor: pointer;
+    
 }
 .comprar p{
     font-size: 12px;
@@ -301,3 +324,79 @@ header{
     background-color: #b67e4c;
     color: white;
 }
+
+/*Estilo del Formulario de Contacto*/
+
+.formulario{
+    width: 500px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background: rgba(239, 241, 237, 0.8);
+    border-radius: 10px;
+    margin-top: -100px;
+    padding: 5px 20px;
+    box-shadow: 0px 6px 20px rgba(91, 92, 90, 0.3);
+    
+}
+.formulario h2{
+    color: var(--verde);
+}
+hr{
+    width: 90%;
+    border: 1px solid var(--verde);
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+input, textarea{
+    border-radius: 5px;
+    border-color: var(--humo);
+    padding: 5px; 
+    outline: none;
+}
+input::placeholder, textarea::placeholder{
+    color: var(--marron);
+}
+.enviar{
+    background: var(--verde);
+    color: var(--humo);
+    width: 100px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/*Media Query*/
+@media (max-width: 600px){
+    .carrito{
+        margin-bottom: 20px;
+    }
+    .carrito > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .cardsCarrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        color: var(--verde);
+        gap: 10px;
+    }
+    .formulario{
+        width: 90%;
+    }
+    .datos{
+        width: 100%;
+    }
+}
+
