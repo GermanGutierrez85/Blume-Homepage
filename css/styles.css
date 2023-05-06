@@ -159,30 +159,29 @@ footer{
     background-size: 85px;
     background-repeat: repeat;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    
-    
+    gap: 50px;
+    flex-wrap: wrap;  
 }
 .textoCategoria{
     text-align: center;
-    width: 23em;
-    height: max-content;
+    width: 25em;
+    height: 10em;
     color: var(--verde);
     background: linear-gradient(rgba(239, 241, 237, 0.5), rgba(239, 241, 237, 0.5));
     border-radius: 10px;
     box-shadow: 1px 3px 6px var(--verde);
-    padding: 5px;
+    padding: 10px;
+    font-size: 20px;
 }
 .imgenCategoria > img{
-    width: 23em;
+    width: 40em;
     border-radius: 10px;
     box-shadow: 1px 3px 6px var(--verde);
 }
 .imagenInteriores > img{
-    width: 25em;
+    width: 40em;
     border-radius: 10px;
     box-shadow: 1px 3px 6px var(--verde);
 }
@@ -397,6 +396,31 @@ input::placeholder, textarea::placeholder{
     }
     .datos{
         width: 100%;
+    }
+    .imgenCategoria > img{
+        width: 23em;
+        border-radius: 10px;
+        box-shadow: 1px 3px 6px var(--verde);
+    }
+    .imagenInteriores > img{
+        width: 25em;
+        border-radius: 10px;
+        box-shadow: 1px 3px 6px var(--verde);
+    }
+    .fondoBlume{
+        background: linear-gradient(rgba(239, 241, 237, 0.5), rgba(239, 241, 237, 0.5)),
+        url(../imagenes/asdsd_Mesa\ de\ trabajo\ 1.png);
+        background-size: 85px;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;  
+    }
+    .textoCategoria{
+        width: 23em;
+        font-size: 15px;
     }
 }
 
